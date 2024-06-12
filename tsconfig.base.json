@@ -20,6 +20,7 @@
     "lib": ["ES2022", "dom"],
     "paths": {
       "@connect/ui-core": ["libs/ui-core/src/index.ts"],
+      "@connect/ui-core/button": ["libs/ui-core/button/src/index.ts"],
       "my-lib-1": ["libs/my-lib-1/src/index.ts"],
       "my-lib-2": ["libs/my-lib-2/src/index.ts"]
     },

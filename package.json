@@ -3,14 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "nx serve",
+    "start": "nx serve ag-app-test",
     "build": "nx build",
     "watch": "nx build --watch --configuration development",
     "test": "nx test",
     "graph": "nx graph",
     "nx": "nx",
     "build-all": "nx run-many -t build",
-    "test-all": "nx run-many -t test"
+    "test-all": "nx run-many -t test",
+    "secondary-entry": "nx g @nx/angular:library-secondary-entry-point --library=ui-core --name=button",
+    "create-comp": "nx g @nx/angular:component libs/ui-core/button/src/lib/test-button"
   },
   "private": true,
   "dependencies": {
