@@ -12,7 +12,8 @@
     "build-all": "nx run-many -t build",
     "test-all": "nx run-many -t test",
     "secondary-entry": "nx g @nx/angular:library-secondary-entry-point --library=ui-core --name=button",
-    "create-comp": "nx g @nx/angular:component libs/ui-core/button/src/lib/test-button"
+    "create-comp": "nx g @nx/angular:component libs/ui-core/button/src/lib/test-button",
+    "create-lib-publishable": "nx generate @nrwl/angular:library ui-core-theme --importPath=@connect/ui-core-theme --publishable"
   },
   "private": true,
   "dependencies": {
