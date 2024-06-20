@@ -22,6 +22,7 @@
       "@connect/ui-core": ["libs/ui-core/src/index.ts"],
       "@connect/ui-core-theme": ["libs/ui-core-theme/src/index.ts"],
       "@connect/ui-core/button": ["libs/ui-core/button/src/index.ts"],
+      "@connect/ui-core/overlay": ["libs/ui-core/overlay/src/index.ts"],
       "my-lib-1": ["libs/my-lib-1/src/index.ts"],
       "my-lib-2": ["libs/my-lib-2/src/index.ts"]
     },

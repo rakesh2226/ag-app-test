@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import {HomeComponent} from 'my-lib-1';
-import {UiCoreComponent} from '@connect/ui-core';
 import {ButtonModule} from '@connect/ui-core/button';
+import {OverlayModule} from '@connect/ui-core/overlay';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HomeComponent, UiCoreComponent, ButtonModule],
+  imports: [RouterOutlet, HomeComponent, ButtonModule, OverlayModule],
   
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
