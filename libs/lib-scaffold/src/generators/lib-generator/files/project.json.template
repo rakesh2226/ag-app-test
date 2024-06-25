@@ -1,0 +1,7 @@
+{
+  "name": "@<%= scope %>/<%= name %>",
+  "description": "<%= description %>",
+  "scripts": {
+    "build": "nx build"
+  }
+}

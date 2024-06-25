@@ -14,7 +14,11 @@
     "secondary-entry": "nx g @nx/angular:library-secondary-entry-point --library=ui-core --name=overlay",
     "create-comp": "nx g @nx/angular:component libs/ui-core/overlay/src/lib/popup-overlay --standalone=false",
     "create-lib-publishable": "nx generate @nrwl/angular:library ui-core-theme --importPath=@connect/ui-core-theme --publishable",
-    "nx-affected": "nx affected -t build"
+    "nx-affected": "nx affected -t build",
+    "setup-plugin": "nx add @nx/plugin -D -w",
+    "add-plugin": "nx g @nx/plugin:plugin",
+    "add-generator":"nx generate @nx/plugin:generator lib-generator --project=lib-scaffold",
+    "custom-generator": "nx g lib-scaffold:lib-generator"
   },
   "private": true,
   "dependencies": {
@@ -26,6 +30,7 @@
     "@angular/platform-browser": "^18.0.0",
     "@angular/platform-browser-dynamic": "^18.0.0",
     "@angular/router": "^18.0.0",
+    "@nx/devkit": "19.2.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.3"
@@ -44,9 +49,11 @@
     "@nx/eslint-plugin": "19.2.2",
     "@nx/jest": "19.2.2",
     "@nx/js": "19.2.2",
+    "@nx/plugin": "^19.2.2",
     "@nx/workspace": "19.2.2",
     "@schematics/angular": "^18.0.3",
     "@swc-node/register": "~1.9.1",
+    "@swc/cli": "~0.3.12",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
     "@types/jasmine": "~5.1.0",

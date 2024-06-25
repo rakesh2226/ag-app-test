@@ -1,0 +1,7 @@
+{
+  "name": "@ag-app-test/new-lib-1",
+  "description": "creating new lib using custom generator called lib-scaffold",
+  "scripts": {
+    "build": "nx build"
+  }
+}
